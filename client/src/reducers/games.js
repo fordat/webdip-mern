@@ -3,7 +3,7 @@ const games = (games = [], action) => {
     case 'FETCH_ALL':
       return action.payload;
     case 'CREATE':
-      return games;
+      return [...games, action.payload];
     default:
       return games;
   }

@@ -1,0 +1,33 @@
+import { blue } from '@material-ui/core/colors';
+import { makeStyles } from '@material-ui/core/styles';
+
+// import useStyles from './styles'
+
+export default makeStyles((theme) => ({
+  root: {
+    '& .MuiTextField-root': {
+      margin: theme.spacing(1),
+    },
+  },
+  paper: {
+    padding: theme.spacing(2),
+  },
+  form: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+  },
+  // fileInput: {
+  //   width: '97%',
+  //   margin: '10px 0',
+  // },
+  buttonSubmit: {
+    '&:hover': {
+      backgroundColor: '#01579b',
+    },
+    marginBottom: 10,
+    backgroundColor: '#3498db',
+    color: 'white',
+    width: '97%',
+  },
+}));
